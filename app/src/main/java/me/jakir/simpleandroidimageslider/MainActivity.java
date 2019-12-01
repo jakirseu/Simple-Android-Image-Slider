@@ -1,12 +1,14 @@
 package me.jakir.simpleandroidimageslider;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,9 +32,9 @@ public class MainActivity extends FragmentActivity {
     private List<Fragment> getFragments(){
         List<Fragment> fList = new ArrayList<Fragment>();
 
-        fList.add(MyFragment.newInstance("http://jakir.me/wp-content/uploads/2017/01/ios-.jpg"));
-        fList.add(MyFragment.newInstance("http://jakir.me/wp-content/uploads/2017/01/software-development.jpg"));
-        fList.add(MyFragment.newInstance("http://jakir.me/wp-content/uploads/2017/01/web-development.jpg"));
+        fList.add(MyFragment.newInstance("https://jakir.me/wp-content/uploads/2017/01/ios-.jpg"));
+        fList.add(MyFragment.newInstance("https://jakir.me/wp-content/uploads/2017/01/software-development.jpg"));
+        fList.add(MyFragment.newInstance("https://jakir.me/wp-content/uploads/2017/01/web-development.jpg"));
 
         return fList;
     }
